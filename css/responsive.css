@@ -1,0 +1,143 @@
+/* Responsive Design */
+@media (max-width: 992px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .typing-text {
+        font-size: 1.3rem;
+    }
+
+    #aboutme,
+    .pro_h1,
+    .rsu_upper {
+        font-size: 2.5rem;
+    }
+
+    #about,
+    .pro_lower,
+    .rsu_lower {
+        font-size: 5rem;
+    }
+}
+/* Tablet View */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark);
+        padding: 1.5rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 0 0 15px 15px;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+        animation: fadeIn 0.5s ease forwards;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .navbar-toggler {
+        display: block;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .details p::before {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .typing-text {
+        font-size: 1.1rem;
+    }
+
+    #aboutme,
+    .pro_h1,
+    .rsu_upper {
+        font-size: 2rem;
+    }
+
+    #about,
+    .pro_lower,
+    .rsu_lower {
+        font-size: 3.5rem;
+    }
+
+    .contact-row {
+        flex-direction: column;
+    }
+
+    .icon_ct {
+        margin-bottom: 1rem;
+    }
+}
+/* Mobile view */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .typing-text {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    #aboutme,
+    .pro_h1,
+    .rsu_upper {
+        font-size: 1.8rem;
+    }
+
+    #about,
+    .pro_lower,
+    .rsu_lower {
+        font-size: 3rem;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-icon i {
+        font-size: 1.5rem;
+    }
+
+    .abt_h {
+        height: 40px;
+    }
+}
